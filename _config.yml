@@ -13,7 +13,7 @@ title_separator          : "-"
 name                     : &name "Chenxin Zhong"
 description              : &description "A second year master student in mathematics"
 url                      : https://cxzhong.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "cxzhong/cxzhong.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -22,7 +22,7 @@ repository               : "cxzhong/cxzhong.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Chenxin Zhong"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Regensburg, Germany"
