@@ -2,6 +2,7 @@
 permalink: /
 title: "Chenxin Zhong's Academic Page"
 author_profile: true
+math: true
 redirect_from: 
   - /about/
   - /about.html
