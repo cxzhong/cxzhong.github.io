@@ -6,8 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-About Me
-======
 
 My name is Chenxin Zhong. I hold a Master of Science in Mathematics from the University of Regensburg in Germany, which I attended from October 2022 to August 2024. For my master's thesis, titled "Semistability Condition of Adelic Curves," I worked under the supervision of Klaus Künnemann. This research explored the slope estimation of tensor products of Hermitian adelic vector bundles on adelic curves. We found that for a field of characteristic p, the tensor product of semistable Hermitian adelic vector bundles remains semistable.
 
