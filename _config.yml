@@ -7,9 +7,9 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "zh-CN"
+locale                   : "en-US"
 site_theme               : "default"
-title                    : "Chenxin Zhong / PhD candidate"
+title                    : "Chenxin Zhong / Research Assistance"
 title_separator          : "-"
 name                     : &name "Chenxin Zhong"
 description              : &description "Math, Cryptographer"
@@ -52,7 +52,6 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -75,7 +74,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : # Username
+  zhihu            : "MathsLover"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
