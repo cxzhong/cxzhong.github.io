@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Chenxin Zhong / Research Assistance"
+title                    : "Chenxin Zhong"
 title_separator          : "-"
 name                     : &name "Chenxin Zhong"
 description              : &description "Math, Cryptographer"
@@ -74,7 +74,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : "MathsLover"
+  zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
