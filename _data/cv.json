@@ -11,9 +11,14 @@
       "city": "Beijing",
       "countryCode": "CN",
       "region": ""
-      "profiles":[
-      ]
     },
+      "profiles":[
+        {
+        "network": "GitHub",
+        "username": "cxzhong",
+        "url": "https://github.com/cxzhong"
+      }
+      ]
   },
   "work": [],
   "education": [
