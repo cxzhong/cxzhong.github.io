@@ -36,8 +36,8 @@
       "courses": []
     },
   ],
-  "skills": [C++, Lean, Python, Latex],
-  "languages": [English, a little Germany],
+  "skills": ["C++, Lean, Python, Latex"],
+  "languages": ["English, a little Germany"],
   "interests": [],
   "references": [],
   "publications": [
