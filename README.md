@@ -1,17 +1,82 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Chenxin Zhong's Academic Pages
+
+**Personal and professional portfolio website for Chenxin Zhong, showcasing research in mathematics and cryptography.**
 
 ![Academic Pages template example](images/homepage.png "Academic Pages template example")
 
+## Featured Project: BLASter
+
+This repository includes research and implementation of **BLASter**, a proof-of-concept LLL-like lattice reduction algorithm that incorporates several performance optimizations:
+
+- **Parallelization** for improved computational efficiency
+- **Segmentation** for better memory management  
+- **Seysen's reduction** instead of traditional size reduction
+- **Linear algebra library integration** for optimized operations
+
+### BLASter Overview
+
+BLASter demonstrates significant speed improvements in lattice reduction, which is fundamental to cryptographic applications including:
+- Post-quantum cryptography
+- Lattice-based encryption schemes
+- Cryptanalysis of lattice-based problems
+
+**Key Features:**
+- Parallel processing capabilities
+- Progressive BKZ reduction with configurable parameters
+- Deep-LLL reduction with adjustable depth
+- Support for q-ary lattice generation
+
+**Performance Example:**
+```bash
+time latticegen q 128 64 20 p | src/app.py -pq
+# Expected: Root Hermite factor: 1.020447, ∥b_1∥ = 11906.636
+# Runtime: ~0.754s real time, ~2.271s user time
+```
+
+*Note: This is research software focused on demonstrating algorithmic improvements in lattice reduction.*
+
 # Getting Started
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+This website serves as a portfolio for cryptographic research, with a focus on lattice reduction algorithms and their applications.
+
+## BLASter Requirements
+
+For running the BLASter lattice reduction implementation:
+
+- **Python 3** with Cython 3.0 or later
+- **Required Python modules:** `cysignals numpy setuptools`
+- **Eigen library** version 3 or later
+- **Optional:** `virtualenv` for local development, `fplll` for lattice generation
+
+## BLASter Setup
+
+1. **Install dependencies:**
+   ```bash
+   make eigen3    # Install Eigen library locally
+   make venv      # Create virtual environment (optional)
+   make          # Compile Cython files
+   ```
+
+2. **Run examples:**
+   ```bash
+   # Basic lattice reduction
+   time latticegen q 128 64 20 p | src/app.py -pq
+   
+   # Deep-LLL with depth 4
+   src/app.py -pq -i {lattice} -d4
+   
+   # Progressive BKZ-60 with 1 tour
+   src/app.py -pq -i {lattice} -b60 -t1 -P2
+   ```
+
+## Website Development
+
+For modifying this academic website:
+
+1. Set site-wide configuration and add your content
+2. Upload files (PDFs, etc.) to the `files/` directory  
+3. Use Jupyter notebooks in `markdown_generator/` for publications and talks
+4. Check deployment status in repository settings under "GitHub pages"
 
 See more info at https://academicpages.github.io/
 
@@ -70,6 +135,26 @@ You should now be able to access the website from `localhost:4000`.
 ### Using the DevContainer in VS Code
 
 If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+
+# Research Focus
+
+This portfolio showcases work in **lattice-based cryptography** and **algorithmic optimization**. The BLASter project demonstrates how classical lattice reduction algorithms can be enhanced through:
+
+- Modern parallel computing techniques
+- Advanced mathematical optimizations  
+- Practical implementation considerations for cryptographic applications
+
+The research contributes to the broader cryptographic community's understanding of lattice reduction efficiency, which is crucial for both constructive and analytical applications in post-quantum cryptography.
+
+## Disclaimer
+
+BLASter is a **proof of concept** focused on demonstrating algorithmic improvements. It is not intended for production use and:
+
+- Does not guarantee algorithm termination or correctness on all lattices
+- Does not support lattices with large entries  
+- Is not actively maintained for robustness or efficiency improvements
+
+However, questions about design choices ("Why is X done in Y way?") are welcomed, and the cryptographic community is encouraged to build upon these ideas for robust implementations.
 
 # Maintenance
 
